@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.my-skills {
+  display: flex;
+  background-color: #13111B;
+  flex-direction: column;
+  width: 100%;
+  min-height:100vh;
+}
+.my-skills-content {
+  display: flex;
+  justify-content: center;
+  margin-left:auto;
+}
+.small-personal{
+  width:95%;
+  display:flex;
+  margin-left:auto;
+  justify-content: center;
+  margin-top:3%;
+}
+.personal-infos{
+  margin-left:auto;
+  display:flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  color:white;
+}
+.personal-infos span{
+  margin: 15px 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight:400;
+  letter-spacing: 1.5px;
+}
+.personal-infos-2{
+  margin-left:auto;
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+  padding:30px;
+  color:white;
+}
+.personal-infos-2 span{
+  margin: 15px 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+
+  font-weight:400;
+  letter-spacing: 1.5px;  
+}
+.personal-infos button{
+  border-radius:15px;
+  align-items: center;
+  margin-top:20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.personal-infos svg{
+  margin:10px;
+}
+.gray-text{
+  color:rgb(151, 151, 151);
+}
+.white-text{
+  color:white;
+
+}
+
+.download-align{
+  width:50%;
+  display:flex;
+  margin-left:auto;
+}
+.my-skills-content h1 {
+  color: #A599E9;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+
+  margin-top: 1.5%;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight:800;
+}
+.opacity-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page-container{
+  width:95%;
+  margin-left:auto;
+  flex-wrap:wrap;
+  display:flex;
+  min-height:5vh;
+}
+.select-section{
+  display:flex;
+  align-content: center;
+  align-items:center;
+  border-top:  #FF628C solid 1.5px;
+  color:white;
+}
+.select-section svg{
+    padding-left:7px;
+    margin-top:2px;
+}
+.page-container img{
+  width:35px;
+  height:35px;
+}
+.opacity-container h1{
+  font-size:120px;
+  letter-spacing: 8px;
+  color: hsla(63, 77%, 57%, 0.07);
+  display:flex;
+}
+.h1-absoloute {
+  position: absolute;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+
+  letter-spacing: 3px;
+  margin-top: 2%;
+  color: #A599E9;
+  align-items: center;
+  align-content: center;
+  height: 15%;
+}
+.h1-absoloute span {
+  color: #9effff;
+}
+.my-skills-displayed {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 80%;
+  flex-wrap: wrap;
+  min-height:82vh;
+  margin:auto;
+  gap:10px;
+  margin-left:auto;
+}
+.circle {
+  position: relative;
+  margin: 20px;
+  width: 160px;
+  height: 160px;
+  cursor: default;
+}
+.circle span {
+  position: absolute;
+  display: block;
+  vertical-align: middle;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #FB94FF;
+  letter-spacing: 1px;
+  line-height: 160px;
+  font-size: 30px;
+  font-weight:lighter;
+  font-family: "Poppins", sans-serif;
+
+  transition: font-size 0.2s ease-out;
+}
+.circle:before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  border: 20px solid #B362FF;
+  border-radius: 100%;
+  transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
+}
+.circle .percentage-bar {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  -webkit-clip-path: inset(0 0 0 50%);
+  clip-path: inset(0 0 0 50%);
+}
+.circle .percentage-bar:before {
+  position: absolute;
+  content: "";
+  -webkit-clip-path: inset(0 50% 0 0);
+  clip-path: inset(0 50% 0 0);
+  transform: rotate(0deg);
+  width: 120px;
+  height: 120px;
+  border: 20px solid #A599E9;
+  background: transparent;
+  border-radius: 100%;
+  transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
+}
+.circle:hover:before {
+  width: 140px;
+  height: 140px;
+  border-width: 10px;
+}
+.circle:hover span {
+  font-size: 45px;
+}
+.circle:hover .percentage-bar:before, .circle:hover .percentage-bar:after {
+  width: 140px;
+  height: 140px;
+  border-width: 10px;
+}
+.text-holder {
+  text-align: center;
+  color: white;
+  margin-top: -10px;
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 900;
+  font-size: 20px;
+}
+.sector-wrapper {
+  border-radius: 80px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #A69EFF;
+  box-shadow: 0 0 55px 30px #1E1E3F;
+  margin: 20px;
+  padding:20px;
+  height:220px;
+}
+.real-about-me {
+  min-height: 100vh;
+  background-color: #13111B;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(var(--rotate-deg));
+  }
+}
+
+/* Configure each circle with its specific percentage */
+.circle.percentage-90 .percentage-bar:before,
+.circle.percentage-85 .percentage-bar:before,
+.circle.percentage-50 .percentage-bar:before,
+.circle.percentage-81 .percentage-bar:before,
+.circle.percentage-65 .percentage-bar:before,
+.circle.percentage-52 .percentage-bar:before,
+.circle.percentage-88 .percentage-bar:before {
+  animation: spin 2s ease-out forwards;
+  --rotate-deg: 0deg; /* Default value */
+}
+
+.circle.percentage-90 .percentage-bar:before {
+  --rotate-deg: 324deg;
+}
+.circle.percentage-85 .percentage-bar:before {
+  --rotate-deg: 306deg;
+}
+.circle.percentage-50 .percentage-bar:before {
+  --rotate-deg: 180deg;
+}
+.circle.percentage-81 .percentage-bar:before {
+  --rotate-deg: 291.6deg;
+}
+.circle.percentage-65 .percentage-bar:before {
+  --rotate-deg: 234deg;
+}
+.circle.percentage-52 .percentage-bar:before {
+  --rotate-deg: 187.2deg;
+}
+.circle.percentage-88 .percentage-bar:before {
+  --rotate-deg: 316.8deg;
+}
+
+.my-skills-h1{
+  width:95%;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  margin-left:auto;
+  margin-top:5%;
+  margin-bottom:3%;
+}
+.my-skills-h1 h1{
+  font-family: "Poppins", sans-serif;
+
+  font-size: 25px;
+  font-weight: 700;
+  color:#E1E1E6;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.my-journey{
+  width:95%;
+  display:flex;
+  flex-direction: column;
+  margin-left:auto;
+  justify-content: center;
+  align-items: center;
+}
+.my-journey-container{
+  width:80%;
+  height:100%;
+  display:flex;
+  min-height:90vh;
+  margin-top:20px;
+}
+.my-journey-50{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  background-color:black;
+  border-top: 1.5px solid #FF628C;
+}
+.my-journey-50 p{
+  color:white;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 20px;
+  font-weight: 600;
+  padding:20px;
+}
+/* skills.css */
+/* Add this to your existing skills.css file */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid white;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Additional styles for your other elements */
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.terminal-navigation{
+  display:flex;
+  width:100%;
+  color:white;
+  padding:20px;
+  gap:15px;
+  font-size:12px;
+}
+a:hover{
+  color:#FF628C;
+  cursor: pointer;
+}
+.terminal-navigation span{
+  background-color:yellow;
+  border-radius:50%;
+  color:white;
+}
+
+@media (max-width: 1200px) {
+  .my-skills-displayed {
+      grid-template-columns: repeat(2, 1fr); /* 3 columns for medium screens */
+  }
+  .small-personal{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .year-expierience{
+    grid-template-columns: 1fr;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .my-skills-displayed {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+  .personal-infos-2{
+    text-align: center;
+  }
+  .select-section{
+    display:none;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .my-skills-displayed {
+      grid-template-columns: 1fr; /* 1 column for very small screens (phones) */
+      margin-top:5%;
+  }
+
+
+  .small-info {
+    width: 40%; /* Adjust width to fit smaller screens */
+    margin: 20px 0; /* Add margin for spacing */
+    
+  }
+  .opacity-container h1{
+    font-size:80px;
+  }
+  .my-skills-content h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .year-expierience{
+    display:0;
+  }
+  .select-section{
+    display:none;
+  }
+}
+
+.year-expierience {
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  color: white;
+  display:flex;
+  flex-wrap:wrap;
+  gap: 50px;
+}
+.small-info {
+  flex: 1 1 10%; /* Make each item occupy 45% of the container width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1.5px solid #A69EFF;
+  box-shadow: 0 0 55px 30px #1E1E3F;
+  border-radius: 10px;
+  padding: 20px 80px 25px 40px;
+  word-wrap: break-word; /* Allow words to break */
+}
+
+.small-info h1 {
+  font-family: "Poppins", sans-serif;
+
+  padding-left:10px;
+  font-size:40px;
+  color:#FF628C;
+}
+
+.small-info p {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  font-size:20px;
+  font-weight:600;
+  color:white;
+}
+.small-info span{
+  padding-left:10px;
+  font-size:20px;
+  font-weight:600;
+}
+/* styles.css */
+
+/* Customize Timeline Dot */
+.MuiTimelineDot-root {
+  background-color: #b41212; /* Change the color */
+  width: 30px; /* Change the width */
+  height: 30px; /* Change the height */
+}
+
+/* Customize Timeline Connector */
+.MuiTimelineConnector-line {
+  background-color: #A69EFF; /* Change the color */
+  height: 5px; /* Change the height */
+}
+
+/* Customize Timeline Content */
+.MuiTimelineContent-root {
+  color: white; /* Change the color */
+  font-family: "Poppins", sans-serif;
+
+}

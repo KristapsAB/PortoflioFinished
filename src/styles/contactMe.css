@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.contact-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #13111B;
+}
+
+.contact-me-container {
+    width: 95%;
+    background-color: black;
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-me-content {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    align-items: center;
+}
+
+.absoloute-container {
+    position: absolute;
+}
+
+.absoloute-container h1 {
+    color: #A599E9;
+    font-size: 60px;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 800;
+}
+
+.absoloute-container span {
+    color: #9EFFFF;
+}
+
+.opacity-h1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.opacity-h1 h1 {
+    font-size: 120px;
+    color: hsla(63, 77%, 57%, 0.07);
+    font-family: "Encode Sans", sans-serif;
+    margin-left: 2%;
+    letter-spacing: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-wrapper .error {
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.input-content {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.personal-contact-form {
+    width: 100%;
+    background-color: #13111B;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.personal-contact-info {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.personal-contact-info h1 {
+    color: white;
+}
+
+.personal-contact-info h2,
+.personal-contact-info p {
+    margin: 10px 0;
+    color: white;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item .contact-text {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item h2,
+.contact-item p {
+    margin: 0;
+    line-height: 30px;
+}
+
+.contact-item h2 {
+    opacity: .8;
+}
+
+.contact-item p {
+    color: white;
+    font-weight: 400;
+    font-family: "Encode Sans", sans-serif;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 86px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.input-field {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 60px;
+}
+
+.input-field .error {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    color: red;
+    font-size: 0.8rem;
+}
+
+.input-field input {
+    width: 340px;
+    padding: 10px;
+    margin-right: 4%;
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    background-color: #5c4aa318;
+    outline: 3px solid #d84f74;
+    color: white;
+}
+
+.input-field input:last-child {
+    margin-right: 0;
+}
+
+::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.subject-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+.subject-input input {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    height: 25px;
+    background-color: #5c4aa318;
+    outline: 3px solid #FF628C;
+    border-radius: 15px;
+    color: white;
+    width: 700px;
+}
+
+.subject-input textarea {
+    width: 744px;
+    padding: 10px;
+    background-color: #5c4aa318;
+    border-radius: 15px;
+    border: 3px solid #FF628C;
+    resize: vertical;
+    outline: none;
+    color: white;
+    height: 120px;
+    font-weight: 600;
+    margin-top: 25px;
+    min-height: 80px;
+}
+
+.subject-input button {
+    margin-top: 20px;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+button {
+    border: none;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: 2px solid #FF9D00;
+    color: white;
+    font-weight: 600;
+    padding-left: 10px;
+    height: 40px;
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FF9D00;
+    transition: left 0.4s;
+    z-index: -1;
+}
+
+button:hover::before {
+    left: 0;
+}
+
+button:hover {
+    color: white;
+}
+
+.button-wrapper button svg {
+    color: #A599E9;
+    height: 100%;
+    margin: 10px;
+}
+
+.social-list a {
+    padding: 10px;
+    position: relative;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.social-list a:hover {
+    background-color: #FAD000;
+}
+
+.social-list a svg {
+    color: #3AD900;
+}
+
+.personal-contact-info span {
+    color: #FF628C;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .contact-me-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .absoloute-container h1 {
+        font-size: 40px;
+    }
+
+    .opacity-h1 h1 {
+        font-size: 80px;
+        margin-left: 1%;
+    }
+
+    .personal-contact-info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .input-fields {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .input-field {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-field input {
+        width: 100%;
+    }
+
+    .subject-input input,
+    .subject-input textarea {
+        width: 100%;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-wrapper {
+        justify-content: center;
+    }
+
+    .social-list {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-list a {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .absoloute-container h1 {
+        font-size: 30px;
+    }
+
+    .opacity-h1 h1 {
+        font-size: 60px;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+
+    .input-fields {
+        margin: 10px;
+    }
+
+    .input-field {
+        gap: 10px;
+    }
+
+    .subject-input input,
+    .subject-input textarea {
+        width: 100%;
+    }
+    .skills-section{
+        overflow: hidden;
+    }
+}
+.success-message {
+    color: green;
+    position:absolute;
+}

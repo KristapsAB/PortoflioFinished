@@ -1,81 +1,86 @@
-.my-work{
-    display:flex;
-    min-height:100vh;
-    flex-direction: column;
-    background-color:#13111B;
-    justify-content: center;
-    align-items: center;
+.my-work {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #13111B;
+  justify-content: center;
+  align-items: center;
 }
-.my-work-95{
-    width:95%;
-    margin-left:auto;
-    min-height:100vh;
+
+.my-work-95 {
+  width: 95%;
+  margin-left: auto;
+  min-height: 100vh;
 }
-.tab-navigation{
-    display:flex;
-    margin:auto;
-    justify-content: center;
-    gap:70px;
+
+.tab-navigation {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 70px;
 }
-.tab-navigation button{
-    border:none;
-    outline:none;
-    font-family: "Poppins", sans-serif;
-    font-size:15px;
+
+.tab-navigation button {
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
+
 .tab-content {
-    padding: 20px;
-   width:95%;
-   display:flex;
-   justify-content: center;
-   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  }
-  .work-designs{
-    width:300px;
-    border: 4px solid white;
-    display:flex;
-    height:55%;
-    margin:5px auto;
-
-  }
-  .work-designs img{
-    width:30%;
-    margin:auto;
-  }
-.work-designs img:hover{
-    transform:scale(1.1);
+  padding: 20px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
 }
-  .first-wrap-work{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    width:80%;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
 
-  }
-  /* For screens smaller than 768px (phones) */
+.first-wrap-work {
+  display: flex;
+  flex-wrap: wrap; /* Changed from wrap to nowrap */
+  justify-content: space-between; /* Changed from space-evenly */
+  width: 100%; /* Changed from 80% to 100% */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  justify-content: center;
+}
+
+.work-designs {
+  flex: 0 0 auto; /* Prevent shrinking */
+  margin: 0 10px; /* Add some horizontal spacing between images */
+}
+
+.work-designs img {
+  width: 100%; /* Make image responsive within its container */
+  max-width:700px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.work-designs img:hover {
+  transform: scale(1.1);
+}
+
+/* For screens smaller than 768px (phones) */
 @media screen and (max-width: 768px) {
-    .tab-navigation {
+  .tab-navigation {
       flex-direction: column;
       align-items: center;
-      gap: 10px; /* Reduce the gap between buttons */
-    }
-  
-    .tab-navigation button {
-      padding: 8px 16px; /* Adjust padding for smaller buttons */
-    }
-  
-    .tab-content {
-        grid-template-columns: repeat(1, 1fr); /* Adjust to 1 column for smaller screens */
-      }
-  
-    .work-designs {
-      width: 100%; /* Adjust width of work designs */
-      margin-bottom: 20px; /* Add space between work designs */
-    }
-  
-    .work-designs img {
-      width: 100%; /* Make images responsive */
-    }
+      gap: 10px;
   }
-  
+
+  .tab-navigation button {
+      padding: 8px 16px;
+  }
+
+  .first-wrap-work {
+      flex-wrap: wrap; /* Allow wrapping on small screens */
+      justify-content: center; /* Center items when wrapped */
+  }
+
+  .work-designs {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .work-designs img {
+      max-width: 100%; /* Allow full width on small screens */
+  }
+}

@@ -9,7 +9,7 @@ import MyWork from '../components/myWork';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import htmlImage from '../images/html.png'; 
-import ProfileImage from '../images/PortfolioImage.jpg';
+import ProfileImage from '../images/cachedImage.PNG';
 
 function Portfolio() {
   const navigate = useNavigate();

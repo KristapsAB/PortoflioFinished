@@ -3,9 +3,9 @@ import '../styles/mywork.css';
 import Nav from '../components/Navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import login1 from '../images/error.png';
-import login2 from '../images/error.png';
-import login3 from '../images/error.png';
+import Dashboard from '../images/Dashboard.png'
+import Login from '../images/Logins.png'
+import Profile from '../images/ProfilePage.png'
 function MyWork() {
   // State to manage the active tab
   const [activeTab, setActiveTab] = useState('design1'); // Set the default active tab
@@ -52,100 +52,28 @@ function MyWork() {
         {activeTab === 'design1' && (
           <div className="tab-content">
             <div className='first-wrap-work'>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login1} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login1} ></img>
-            </div>
-            </div>
+           </div>
           </div>
         )}
 
         {activeTab === 'design2' && (
           <div className="tab-content">
         <div className='first-wrap-work'>
-            <div className='work-designs'>
-                <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-                <img src={login2} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login2} ></img>
-            </div>
+          
             </div>
           </div>
         )}
-
         {activeTab === 'design3' && (
           <div className="tab-content">
        <div className='first-wrap-work'>
             <div className='work-designs'>
-                <img src={login3} ></img>
+                <img src={Dashboard} ></img>
             </div>
             <div className='work-designs'>
-            <img src={login3} ></img>
+            <img src={Login} ></img>
             </div>
             <div className='work-designs'>
-            <img src={login3} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login3} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login3} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login3} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login3} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login3} ></img>
-            </div>
-            <div className='work-designs'>
-            <img src={login3} ></img>
+            <img src={Profile} ></img>
             </div>
             </div>
           </div>

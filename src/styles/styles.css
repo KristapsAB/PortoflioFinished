@@ -24,6 +24,7 @@
 
 .info-holder {
   width: 70%;
+
 }
 
 .selected-page {
@@ -212,6 +213,10 @@
   }
   .info-holder{
     width:auto;
+    display:flex;
+  }
+  .info-holder p{
+    font-size:22px;
   }
   img{
     width:30%;
@@ -220,4 +225,7 @@
 }
 .skills-section{
   width:auto;
+}
+.test-sections{
+  background:red;
 }
